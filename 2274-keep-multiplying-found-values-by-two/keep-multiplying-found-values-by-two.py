@@ -1,6 +1,21 @@
 class Solution:
     def findFinalValue(self, nums: List[int], original: int) -> int:
-        for i in nums:
-            if original in nums:
-                original=2*original
+        while original in nums:
+            original =2*original
         return original
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #Less Efficient Solution
+        # for i in nums:
+        #     if original in nums:
+        #         original=2*original
+        # return original
