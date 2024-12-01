@@ -2,12 +2,12 @@ class Solution:
     def checkIfExist(self, arr: List[int]) -> bool:
 
         for i in range(len(arr)):
-
-            temp=arr[0:i]+arr[i+1:]
-            print(temp)
-            if arr[i]*2 in temp:
+            if 2*arr[i] in arr[0:i]+arr[i+1:]:
+                print(arr[i])
                 return True
         return False
+
+            
         # arr.sort(reverse=True)
         # print(arr)
         
