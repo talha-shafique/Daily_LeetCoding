@@ -1,7 +1,12 @@
 class Solution:
     def isMonotonic(self, nums: List[int]) -> bool:
       
-        return nums==sorted(nums) or nums==sorted(nums, reverse=True)
+        if nums==sorted(nums):
+            return True
+        elif nums==sorted(nums, reverse=True):
+            return True
+        else:
+            return False
 
 
 
