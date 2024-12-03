@@ -5,6 +5,5 @@ class Solution:
         for j in pushed:
             stack.append(j)
             while stack and stack[-1]==popped[i]:
-                stack.pop()
-                i=i+1
+                stack.pop(); i=i+1
         return not stack
