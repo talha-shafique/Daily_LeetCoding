@@ -13,10 +13,8 @@ class Solution:
             return None
         while p2 and p2.next:
             prev=p1
-            print('prev',prev.val)
-            p1=p1.next
-            print('p1',p1.val)
-            p2=p2.next.next
+            print('prev',prev.val); p1=p1.next
+            print('p1',p1.val); p2=p2.next.next
         prev.next=p1.next
         return curr
         
