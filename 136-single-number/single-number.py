@@ -1,19 +1,12 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        # s=[]
-        # for i in nums:
-        #     if i in s:
-        #         s.remove(i)
-        #     else:
-        #         s.append(i)
-        # return s[0]
         s=set()
         for i in nums:
             if i in s:
                 s.remove(i)
             else:
                 s.add(i)
-        return list(s)[0]
+        return s.pop()
 
 
         
